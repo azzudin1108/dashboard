@@ -8,6 +8,7 @@
 
 * {
     border: none;
+    transition: .3s;
 }
 
 body {
@@ -15,74 +16,59 @@ body {
     width: 100%;
 }
 
-/* HOME */
-
-#menu {
-    display: none;
+/* sb */
+.icon-sb {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 25px;
 }
 
-#navbar {
-    box-shadow: 10px 10px 10px black;
+.icon-sb i {
+    display: block;
+    padding: 10px 25px;
 }
 
-#navbar,
-#content {
-    height: 100vh;
-    color: rgb(248, 249, 250);
+#sidebar {
+    background-color: rgb(255 255 255);
+    width: 75px;
+    padding-top: 50px;
 }
 
-.hover {
-    color: rgb(13, 110, 253) !important;
-    background-color: rgb(248, 249, 250);
+#sidebarAft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(37, 7, 94);
+    z-index: -1;
+    border-radius: 0 20px 0 0;
 }
 
-#content {
-    color: #333;
+#sidebarBfr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(37, 7, 94);
+    z-index: -1;
+    border-radius: 0 0 20px 0;
 }
 
-.admin-menu:hover {
-    background-color: rgb(13, 110, 253) !important;
-    color: rgb(248, 249, 250) !important;
+#box {
+    position: absolute;
+    left: 0;
+    height: 57.5px;
+    right: 0;
+    background-color: rgb(37, 7, 94);
+    z-index: -1;
 }
 
-.dropdown.show {
-    left: 0 !important;
-    transform: scaleY(1) !important;
-}
-
-.showing {
-    display: block !important;
-}
-
-#manage,
-#list,
-#pengumuman,
-#help {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    #navbar {
-        height: 60px;
-        position: relative;
-        box-shadow: none;
-    }
-
-    #content {
-        height: fit-content;
-    }
-
-    #navbar ul {
-        position: absolute;
-        transform: scaleY(0);
-        top: 60px;
-        left: -100%;
-        right: 0;
-        background-color: rgb(13, 110, 253);
-        transition: .3s;
-    }
-
-    #menu {
-        display: block;
-    }
+#boxSc {
+    position: absolute;
+    left: 5px;
+    height: 57.5px;
+    right: 0;
+    background-color: rgb(255 255 255);
+    z-index: -1;
+    border-radius: 30px 0 0 30px;
 }
